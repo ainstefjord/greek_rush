@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fraternity.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @fraternity.location %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @fraternity.history %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @fraternity.email %>
+</p>
+
+<p>
+  <strong>Positions:</strong>
+  <%= @fraternity.positions %>
+</p>
+
+<%= link_to 'Edit', edit_fraternity_path(@fraternity) %> |
+<%= link_to 'Back', fraternities_path %>
