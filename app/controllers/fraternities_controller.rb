@@ -1,5 +1,6 @@
 class FraternitiesController < ApplicationController
   before_action :set_fraternity, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /fraternities
   # GET /fraternities.json

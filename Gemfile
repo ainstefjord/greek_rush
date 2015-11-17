@@ -24,13 +24,15 @@ group :development, :test do
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
   gem 'table_print'
+  gem 'rspec-rails', '~> 3.4'
 end
 
 group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
-  gem 'simplecov', :require => false, :group => :test
+  gem 'simplecov',          :require => false, :group => :test
+  gem 'rspec-rails',        '~> 3.4'
 end
 
 group :production do
@@ -48,3 +50,8 @@ gem 'devise-bootstrap-views'
 #Models
 gem 'devise'
 gem 'email_validator'
+
+# this code was causing an error saying there was more than 1 version of rspec listed ~>3.4 and ~>0.0
+# %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+#   gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
+# end

@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
   
   
+  devise_for :users
+  resources :users
   resources :events
   resources :fraternities
   # This is the original scaffold command
   #get 'admin/landing'
   
   root 'admin#landing'
+ ## post 'user/authenticate'
   
   
   
