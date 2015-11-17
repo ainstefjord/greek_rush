@@ -1,6 +1,14 @@
+require 'simplecov'
+SimpleCov.start do
+end
+
+# Previous content of test helper now starts here
+
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+require "minitest/reporters"
+Minitest::Reporters.use!
 require 'simplecov'
 SimpleCov.start
 
