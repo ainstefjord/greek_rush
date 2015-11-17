@@ -1,6 +1,5 @@
 require 'simplecov'
-SimpleCov.start do
-end
+SimpleCov.start
 
 # Previous content of test helper now starts here
 
@@ -11,6 +10,7 @@ require "minitest/reporters"
 Minitest::Reporters.use!
 require 'simplecov'
 SimpleCov.start
+
 
 # Previous content of test helper now starts here
 
