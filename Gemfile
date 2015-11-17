@@ -51,7 +51,7 @@ gem 'devise-bootstrap-views'
 gem 'devise'
 gem 'email_validator'
 
-# this code was causing an error saying there was more than 1 version of rspec listed ~>3.4 and ~>0.0
+# this code was causing an error saying there was more than 1 version of rspec listed ~>3.4 and ~>0.0r
 # %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
 #   gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
 # end

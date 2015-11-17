@@ -4,6 +4,14 @@ class EventsControllerTest < ActionController::TestCase
   setup do
     @event = events(:one)
   end
+  
+    test "should create event" do
+    assert_difference('Event.count') do
+      post :create, event: { date: @event.date, description: @event.description, fraternity_id: @event.fraternity_id, location: @event.location, name: @event.name }
+    end
+
+    assert_redirected_to event_path(assigns(:event))
+  end
 
   test "should get index" do
     get :index
@@ -16,13 +24,7 @@ class EventsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create event" do
-    assert_difference('Event.count') do
-      post :create, event: { date: @event.date, description: @event.description, fraternity_id: @event.fraternity_id, location: @event.location, name: @event.name }
-    end
 
-    assert_redirected_to event_path(assigns(:event))
-  end
 
   test "should show event" do
     get :show, id: @event
