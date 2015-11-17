@@ -41,5 +41,5 @@ Rails.application.configure do
   
  
   ## Check the usefullness of this
-  config.action_mailer.default_url_options = { host: 'https://greek-rush-ainstefjord.c9.io', port: 3000 }
+  config.action_mailer.default_url_options = { :host => 'https://hidden-stream-3045.herokuapp.com/' }
 end
