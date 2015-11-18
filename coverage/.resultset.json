@@ -50,6 +50,8 @@
         null,
         null,
         null,
+        null,
+        1,
         null
       ],
       "/home/ubuntu/workspace/config/initializers/assets.rb": [
@@ -676,11 +678,11 @@
       "/home/ubuntu/workspace/app/models/fraternity.rb": [
         1,
         1,
-        1,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1447739238
+    "timestamp": 1447798263
   }
 }
