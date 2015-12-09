@@ -1,5 +1,6 @@
 class FraternitiesController < ApplicationController
   before_action :set_fraternity, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
 
   # GET /fraternities
   # GET /fraternities.json
@@ -71,4 +72,4 @@ class FraternitiesController < ApplicationController
     def fraternity_params
       params.require(:fraternity).permit(:name, :location, :history, :email, :positions)
     end
-end
+end    

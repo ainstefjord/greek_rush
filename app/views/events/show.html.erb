@@ -17,7 +17,7 @@
 
 <p>
   <strong>Fraternity:</strong>
-  <%= @event.fraternity %>
+  <%= fname = Fraternity.find(@event.fraternity).name %>
 </p>
 
 <p>
