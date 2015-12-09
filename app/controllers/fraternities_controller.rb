@@ -72,4 +72,4 @@ class FraternitiesController < ApplicationController
     def fraternity_params
       params.require(:fraternity).permit(:name, :location, :history, :email, :positions)
     end
-end
+end    
